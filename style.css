@@ -1,0 +1,148 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.nav-bar {
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+  box-shadow: 0px 2px 5px gray;
+  font-family: "Arial";
+  background-color: rgba(255, 255, 255, 1);
+}
+p {
+  font-size: 1rem;
+}
+i {
+  font-size: 1.5rem;
+  color: gray;
+}
+.login {
+  font-size: 1rem;
+}
+.selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a223d;
+  flex-wrap: wrap;
+}
+.card {
+  min-width: 200px;
+  height: 75px;
+  background-color: #233850;
+  margin: 20px;
+  text-align: center;
+}
+.blue {
+  color: #2083f6;
+}
+.white {
+  color: white;
+}
+.select {
+  background: linear-gradient(to right, #52aff8, #095cf3);
+  color: white;
+  font-size: 1.6rem;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  border: 0px;
+  border-radius: 50px;
+}
+.map {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cee9fb;
+  height: 200px;
+}
+input {
+  margin-top: 30px;
+  height: 30px;
+  width: 100%;
+}
+.text-cont {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.right-cont {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.main-container {
+  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.result {
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+  grid-template-rows: none;
+  transition: 0.3s;
+}
+.result:hover {
+  box-shadow: 2px 2px 5px gray;
+}
+.text-result {
+  margin-left: 20px;
+}
+.price {
+  text-align: center;
+  background-color: rgba(211, 211, 211, 0.4);
+}
+.hotel {
+  margin-left: 20px;
+  height: 200px;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+@media only screen and (max-width: 780px) {
+  .selection {
+    display: none;
+  }
+  .main-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 0%;
+  }
+  .hotel {
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .text-result {
+    font-size: 70%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .price {
+    font-size: 50%;
+  }
+  .text-cont {
+    font-size: 50%;
+  }
+  .right-cont {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main-container {
+    padding: 0%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
